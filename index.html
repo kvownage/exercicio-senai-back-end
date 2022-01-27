@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Eventos</h1>
+    </header>
+    <main>
+
+        <div class ="modal">
+            <div class="title">
+                <h2>Formulário de cadastro de eventos</h2>            
+            </div>
+    
+            <div class="card">
+                <div class="lineinput">
+                    <label for="">Nome do Evento</label>
+                    <input type="text" id="nomeEvento"> 
+                </div>
+                
+                <div class="lineinput">
+                    <label for="">Nome do Palestrante</label>
+                    <input type="text" id="nomePalestrante">
+                </div>
+    
+                <div class="lineinputdate">
+                    <label for="">Data do Evento</label>
+                    <input type="date" id="dataEvento">
+                </div>
+    
+                <button onclick="evento.salvar()">Salvar</button>                
+                <button onclick="evento.cancelar()">Cancelar</button>
+            
+            </div>
+        </div>
+
+        <div class='btn_iniciais'>
+            <button onclick="cadastrar()">Cadastrar Evento</button>
+            <button onclick="usuario.perguntaIdade()">Escolher um evento</button>
+        </div>
+        
+        <div class='formularioIdade'>
+            <div class='inputIdade'>
+                <label for="">Nome</label>
+                <input type="text" id="nomeUsuario">
+            </div>
+            <div class='inputNome'>
+                <label for="">Idade</label>
+                <input type="text" id="idadeUsuario">                
+            </div>  
+            <button onclick="usuario.verificaIdade()">Verificar</button>
+            <button onclick="usuario.voltaTelaInicial()">Cancelar</button>
+        </div>
+
+        <div class='tabelaeventos'>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Evento</th>
+                    <th>Palestrante</th>
+                    <th>Data</th>
+                    <th>Nº Inscritos</th>
+                    <th>Inscrever</th>
+                </thead>
+                <!-- <tbody id="tbody">
+
+                </tbody> -->
+            </table>
+            <button onclick="usuario.voltaTelaInicial()">Voltar</button> 
+        </div>  
+                 
+           
+         
+    </main>
+</body>
+</html>

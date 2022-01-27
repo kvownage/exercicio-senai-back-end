@@ -1,0 +1,122 @@
+header{
+    background-color: blueviolet;
+    padding: 10px;
+    color:#fff; 
+    text-align:center;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafbfc;
+}
+
+main{
+    padding: 30px 50px;
+}
+
+.card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top:15px;
+    border-radius:5px;
+}
+
+.lineinput{
+    display:grid;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+
+.lineinputdate{
+        margin-bottom:10px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    outline:0
+}
+
+button{
+    margin:5px;
+    border:0;
+    outline:10px;
+    background-color: blueviolet;
+    color:cornsilk;
+    border-radius:3px;
+    font-weight: bold;
+    transition:all ease 0.3s;
+}
+
+button:hover{
+    background-color: rgb(96, 23, 165);
+}
+
+.modal{
+    width: 500px;
+    height:200px;
+    background-color: #e4e8ec;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+    animation:animate;
+    animation-duration:800;   
+    display: none;  
+}
+
+.modal title{
+    padding: 10px;
+}
+
+@keyframes animate{
+    from{opacity:1;}
+    from{opacity:0;}
+}
+
+.inputIdade{
+    display:grid;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+
+.inputNome{
+    display:grid;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+
+.formularioIdade{
+    display:none;
+}
+
+table{
+    border-collapse:collapse;
+    border:1px solid #ccc;
+    width: 100%;
+}
+
+table th{
+    background-color: aliceblue;
+}
+
+table td img{
+    width:22px;
+}
+
+.tabelaeventos{
+    display:none;
+}
+
+.btn_iniciais{
+    width: 200px;
+    height:60px;
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    
+       
+}
